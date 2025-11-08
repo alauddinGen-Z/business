@@ -6,6 +6,13 @@ exports.handler = async function (event, context) {
     }
 
     try {
+        if (!process.env.GEMINI_API_KEY) {
+            return {
+                statusCode: 500,
+                body: JSON.stringify({ error: 'GEMINI_API_KEY is not set in the environment variables.' }),
+            };
+        }
+
         const { essay } = JSON.parse(event.body);
         const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
