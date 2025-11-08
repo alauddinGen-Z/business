@@ -9,6 +9,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script>
         tailwind.config = {
             darkMode: "class",
@@ -59,7 +60,7 @@
 </header>
 <main class="flex-grow">
 <!-- HeroSection -->
-<section class="flex justify-center bg-primary text-white">
+<section class="flex justify-center bg-primary text-white" data-aos="fade-in" data-aos-duration="1000">
 <div class="w-full max-w-6xl px-4 py-20 lg:py-28">
 <div class="@container">
 <div class="grid grid-cols-1 items-center gap-12 @[864px]:grid-cols-2">
@@ -80,7 +81,7 @@
 </div>
 </section>
 <!-- Stats / Social Proof -->
-<section class="flex justify-center bg-light-gray py-12">
+<section class="flex justify-center bg-light-gray py-12" data-aos="fade-up">
 <div class="w-full max-w-6xl px-4">
 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 <div class="flex flex-1 flex-col gap-2 rounded-xl bg-background-light p-6 text-center shadow-sm">
@@ -99,7 +100,7 @@
 </div>
 </section>
 <!-- FeatureSection -->
-<section class="flex justify-center py-16 sm:py-24" id="features">
+<section class="flex justify-center py-16 sm:py-24" id="features" data-aos="fade-up">
 <div class="w-full max-w-6xl px-4">
 <div class="flex flex-col gap-12">
 <div class="flex flex-col gap-3 text-center">
@@ -148,7 +149,7 @@
 </div>
 </section>
 <!-- Testimonials -->
-<section class="flex justify-center bg-primary py-16 text-white sm:py-24" id="testimonials">
+<section class="flex justify-center bg-primary py-16 text-white sm:py-24" id="testimonials" data-aos="fade-up">
 <div class="w-full max-w-6xl px-4">
 <div class="flex flex-col gap-12">
 <div class="flex flex-col gap-3 text-center">
@@ -191,7 +192,7 @@
 </div>
 </section>
 <!-- Pricing Table -->
-<section class="flex justify-center bg-light-gray py-16 sm:py-24" id="pricing">
+<section class="flex justify-center bg-light-gray py-16 sm:py-24" id="pricing" data-aos="fade-up">
 <div class="w-full max-w-6xl px-4">
 <div class="flex flex-col gap-12">
 <div class="flex flex-col gap-3 text-center">
@@ -240,7 +241,7 @@
 </div>
 </section>
 <!-- FAQ Section -->
-<section class="flex justify-center py-16 sm:py-24" id="faq">
+<section class="flex justify-center py-16 sm:py-24" id="faq" data-aos="fade-up">
 <div class="w-full max-w-4xl px-4">
 <div class="flex flex-col gap-12">
 <div class="flex flex-col gap-3 text-center">
@@ -324,4 +325,8 @@
 </div>
 </footer>
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body></html>
