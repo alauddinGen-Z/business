@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         writingOutput.innerHTML = '<p class="text-gray-500">Getting your score...</p>';
 
         try {
-            const response = await fetch('/api/writing-score', {
+            const response = await fetch('/.netlify/functions/writing-score', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         speakingOutput.innerHTML = '<p class="text-gray-500">Starting practice...</p>';
 
         try {
-            const response = await fetch('/api/speaking-practice', {
+            const response = await fetch('/.netlify/functions/speaking-practice', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         speakingFeedback.innerHTML = '<p class="text-gray-500">Getting your feedback...</p>';
 
         try {
-            const response = await fetch('/api/speaking-practice', {
+            const response = await fetch('/.netlify/functions/speaking-practice', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         readingOutput.innerHTML = '<p class="text-gray-500">Evaluating your answer...</p>';
 
         try {
-            const response = await fetch('/api/reading-test', {
+            const response = await fetch('/.netlify/functions/reading-test', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
